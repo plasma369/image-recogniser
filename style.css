@@ -1,7 +1,7 @@
 body
 {
     color: white;
-    background-color: pink;
+    background-color: crimson;
 }
 
 .heading
@@ -12,7 +12,7 @@ body
 
 .name_of_objects, #result_object_name, #result_object_accuracy
 {
-    color: yellow;
+    color: pink;
 }
 
 #camera

@@ -9,6 +9,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
    <link rel="stylesheet" href="style.css">
   
   </head>
@@ -17,19 +19,19 @@
   <div class="container">
     
     <center>
-      <h3 class="btn btn-default heading ">IMAGE RECOGNITION</h3>
+      <h3 class="btn btn-default heading ">FACE SCANER</h3>
       <br><br>
 
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <p style="font-size: 22px;">Model is trained to identify the following faces: </p>
 
       <b class="name_of_objects">
-        Brett
+        Brett(me)
         <hr>
-        Bee
+        Emily(mom)
         <hr>
-        Cup
+        Brett2(dad)
         <hr>
-        Rock
+        Jonathan(brother)
         <hr>
       </b>
       
@@ -43,8 +45,8 @@
       <button onclick="check();" class="btn btn-success">Identafy Image</button>
       <br><br>
 
-      <p style="font-size: 22px;">Object :  </p>
-      <p style="font-size: 22px;">Accuracy :  </p>
+      <p style="font-size: 22px;">Name : <span id="result_object_name"></span></p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span></p>
     </center>
 
   </div>
